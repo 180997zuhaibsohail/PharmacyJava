@@ -1,0 +1,504 @@
+Tue Jun 15 09:54:52 PKT 2021 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Tue Jun 15 09:54:52 PKT 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-017a-0e05-a0e0-ffffc8802a23 
+on database directory C:\Users\ZUHAIB SOHAIL\Documents\NetBeansProjects\PharmacyJava\Pharmadb with class loader sun.misc.Launcher$AppClassLoader@6f94fa3e 
+Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_111/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_111-b14
+user.dir=C:\Program Files\Java\jdk1.8.0_111\db
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\ZUHAIB SOHAIL\Documents\NetBeansProjects\PharmacyJava
+Database Class Loader started - derby.database.classpath=''
+Tue Jun 15 09:55:38 PKT 2021 Thread[DRDAConnThread_3,5,main] Cleanup action starting
+java.sql.SQLException: Database 'Pharmadba' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ004: Database 'Pharmadba' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 18 more
+============= begin nested exception, level (1) ===========
+ERROR XJ004: Database 'Pharmadba' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Tue Jun 15 09:55:38 PKT 2021 Thread[DRDAConnThread_3,5,main] (DATABASE = Pharmadba), (DRDAID = {2}), Database 'Pharmadba' not found.
+Tue Jun 15 09:55:49 PKT 2021 Thread[DRDAConnThread_3,5,main] Cleanup action starting
+java.sql.SQLException: Database 'Pharmadba' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ004: Database 'Pharmadba' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 18 more
+============= begin nested exception, level (1) ===========
+ERROR XJ004: Database 'Pharmadba' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Tue Jun 15 09:55:49 PKT 2021 Thread[DRDAConnThread_3,5,main] (DATABASE = Pharmadba), (DRDAID = {3}), Database 'Pharmadba' not found.
+Tue Jun 15 10:07:48 PKT 2021 Thread[DRDAConnThread_3,5,main] Cleanup action starting
+java.sql.SQLException: Database 'Pharmadba' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ004: Database 'Pharmadba' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 18 more
+============= begin nested exception, level (1) ===========
+ERROR XJ004: Database 'Pharmadba' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Tue Jun 15 10:07:48 PKT 2021 Thread[DRDAConnThread_3,5,main] (DATABASE = Pharmadba), (DRDAID = {4}), Database 'Pharmadba' not found.
+Tue Jun 15 10:19:06 PKT 2021 Thread[DRDAConnThread_3,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:06 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:06 PKT 2021 Thread[DRDAConnThread_3,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:06 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:06 PKT 2021 Thread[DRDAConnThread_4,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:06 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:06 PKT 2021 Thread[DRDAConnThread_4,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:06 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:07 PKT 2021 Thread[DRDAConnThread_5,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:07 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:07 PKT 2021 Thread[DRDAConnThread_5,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:07 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:07 PKT 2021 Thread[DRDAConnThread_6,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:07 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:07 PKT 2021 Thread[DRDAConnThread_6,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:07 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:08 PKT 2021 Thread[DRDAConnThread_7,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:08 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:08 PKT 2021 Thread[DRDAConnThread_7,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:08 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:09 PKT 2021 Thread[DRDAConnThread_8,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:09 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:09 PKT 2021 Thread[DRDAConnThread_8,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:09 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:10 PKT 2021 Thread[DRDAConnThread_9,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:10 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:10 PKT 2021 Thread[DRDAConnThread_9,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:10 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:11 PKT 2021 Thread[DRDAConnThread_10,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:11 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:11 PKT 2021 Thread[DRDAConnThread_10,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:11 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:12 PKT 2021 Thread[DRDAConnThread_11,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:12 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:12 PKT 2021 Thread[DRDAConnThread_11,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:12 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:13 PKT 2021 Thread[DRDAConnThread_12,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:13 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:13 PKT 2021 Thread[DRDAConnThread_12,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:13 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:14 PKT 2021 Thread[DRDAConnThread_13,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:14 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:14 PKT 2021 Thread[DRDAConnThread_13,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:14 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:15 PKT 2021 Thread[DRDAConnThread_14,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:15 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:15 PKT 2021 Thread[DRDAConnThread_14,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:15 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:16 PKT 2021 Thread[DRDAConnThread_15,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:16 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:16 PKT 2021 Thread[DRDAConnThread_15,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:16 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:17 PKT 2021 Thread[DRDAConnThread_16,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:17 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:17 PKT 2021 Thread[DRDAConnThread_16,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:17 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:18 PKT 2021 Thread[DRDAConnThread_17,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:18 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:18 PKT 2021 Thread[DRDAConnThread_17,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:18 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:19 PKT 2021 Thread[DRDAConnThread_18,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:19 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:19 PKT 2021 Thread[DRDAConnThread_18,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:19 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:20 PKT 2021 Thread[DRDAConnThread_19,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:20 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:20 PKT 2021 Thread[DRDAConnThread_19,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:20 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:21 PKT 2021 Thread[DRDAConnThread_20,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:21 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:19:21 PKT 2021 Thread[DRDAConnThread_20,5,main] (DATABASE = null), (DRDAID = null), Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+Tue Jun 15 10:19:21 PKT 2021 : Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of a Distributed Protocol Error:  DRDA_Proto_SYNTAXRM; CODPNT arg  = 0; Error Code Value = 3. Plaintext connection attempt from an SSL enabled client?
+	at org.apache.derby.impl.drda.DRDAConnThread.throwSyntaxrm(Unknown Source)
+	at org.apache.derby.impl.drda.DDMReader.readDssHeader(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.exchangeServerAttributes(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sessionInitialState(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Tue Jun 15 10:24:38 PKT 2021 Thread[DRDAConnThread_21,5,main] Cleanup action starting
+java.sql.SQLException: Database 'Pharmadba' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ004: Database 'Pharmadba' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 18 more
+============= begin nested exception, level (1) ===========
+ERROR XJ004: Database 'Pharmadba' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Tue Jun 15 10:24:38 PKT 2021 Thread[DRDAConnThread_21,5,main] (DATABASE = Pharmadba), (DRDAID = {23}), Database 'Pharmadba' not found.
+----------------------------------------------------------------
+Tue Jun 15 10:25:41 PKT 2021: Shutting down Derby engine
+----------------------------------------------------------------
+Tue Jun 15 10:25:41 PKT 2021:
+Shutting down instance a816c00e-017a-0e05-a0e0-ffffc8802a23 on database directory C:\Users\ZUHAIB SOHAIL\Documents\NetBeansProjects\PharmacyJava\Pharmadb with class loader sun.misc.Launcher$AppClassLoader@6f94fa3e 
+----------------------------------------------------------------
